@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizza Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-screen" class="container">
+    <div class="topping-list">
+      <div class="topping-item" draggable="true" data-topping="cheese">🧀</div>
+      <div class="topping-item" draggable="true" data-topping="tomato">🍅</div>
+      <div class="topping-item" draggable="true" data-topping="olives">🫒</div>
+      <div class="topping-item" draggable="true" data-topping="corn">🌽</div>
+      <div class="topping-item" draggable="true" data-topping="mushroom">🍄</div>
+      <div class="topping-item" draggable="true" data-topping="onion">🧅</div>
+      <div class="topping-item" draggable="true" data-topping="capsicum">🫑</div>
+      <div class="topping-item" draggable="true" data-topping="paneer">🧈</div>
+    </div>
+
+    <div id="pizza-container">
+      <img id="pizza-base" src="assets/images/pizza-base.png" alt="Pizza Base" />
+      <div id="bin" class="hidden">🗑️</div>
+      <button id="finish-btn">FINISH</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

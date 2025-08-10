@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Eating</title>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      background: #fff8e1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      gap: 20px;
+    }
+    img {
+      max-width: 40%;
+      height: auto;
+    }
+    button {
+      padding: 12px 24px;
+      background-color: #ff7043;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    button:hover {
+      background-color: #f4511e;
+    }
+  </style>
+</head>
+<body>
+  <img src="assets/gifs/pizzaeating.gif" alt="Pizza Eating" />
+  <button id="restart-btn">RESTART</button>
+
+  <script>
+    document.getElementById('restart-btn').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
